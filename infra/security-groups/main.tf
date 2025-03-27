@@ -38,7 +38,7 @@ resource "aws_security_group" "ec2_sg_ssh_http" {
     protocol    = "tcp"
   }
 
-  # enable http
+  # enable https
   ingress {
     description = "Allow HTTP request from anywhere"
     cidr_blocks = ["0.0.0.0/0"]
